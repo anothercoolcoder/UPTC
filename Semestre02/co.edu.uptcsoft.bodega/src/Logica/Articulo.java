@@ -1,4 +1,5 @@
 package Logica;
 
-public class Bodega {
+public class Articulo {
+
 }
