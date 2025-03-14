@@ -1,11 +1,14 @@
 package logic;
 
-public class Mammal extends Animal {
+public abstract class Mammal extends Animal {
     protected byte  gestation;
 
     public Mammal(String name, String food, byte age) {
         super(name, food, age);
     }
+
+    @Override
+    public abstract String sonido();
 
     public byte getGestation() {
         return gestation;
@@ -16,7 +19,7 @@ public class Mammal extends Animal {
     }
 
     @Override
-    public String toString() {
+    public String   toString() {
         return "Mammal{" +
                 "age=" + age +
                 ", food='" + food + '\'' +

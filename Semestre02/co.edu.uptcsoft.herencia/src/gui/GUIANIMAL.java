@@ -1,6 +1,5 @@
 package gui;
 import control.ControllerAnimal;
-
 import java.util.Scanner;
 public class GUIANIMAL {
     ControllerAnimal control = new ControllerAnimal();
@@ -13,12 +12,13 @@ public class GUIANIMAL {
         String com = sc.nextLine();
         System.out.println("Digite la edad");
         String eda = sc.nextLine();
-        System.out.println("Digite el pedigree");
-        String ped = sc.nextLine();
-        System.out.println(control.interfazCat(nom, com, eda, ped));
+        System.out.println("Digite la raza");
+        String raza = sc.nextLine();
+        System.out.println("Digite la color");
+        String color = sc.nextLine();
+
+        System.out.println(control.interfazHorse(nom, com, eda, raza,color));
 
     }
 
-    public void getAnimal(){
-    }
 }

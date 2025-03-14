@@ -1,6 +1,6 @@
 package logic;
 
-public class Animal {
+public abstract class Animal {
     protected String name, food;
 
     public Animal(String name, String food, byte age) {
@@ -32,6 +32,8 @@ public class Animal {
     public void setFood(String food) {
         this.food = food;
     }
+
+    public abstract String sonido();
 
     protected byte age;
 

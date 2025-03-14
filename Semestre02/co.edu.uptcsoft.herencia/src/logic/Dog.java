@@ -17,6 +17,11 @@ public class Dog extends Mammal {
     }
 
     @Override
+    public String sonido() {
+        return "";
+    }
+
+    @Override
     public String toString() {
         return "dog{" +
                 "name = '" + name + '\'' +

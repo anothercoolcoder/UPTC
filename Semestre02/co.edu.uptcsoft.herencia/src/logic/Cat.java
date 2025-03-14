@@ -1,5 +1,7 @@
 package logic;
 
+import java.sql.SQLOutput;
+
 public class Cat extends Mammal {
     private String pedigree;
 
@@ -15,6 +17,7 @@ public class Cat extends Mammal {
     public void setPedigree(String pedigree) {
         this.pedigree = pedigree;
     }
+
 
     @Override
     public String toString() {
