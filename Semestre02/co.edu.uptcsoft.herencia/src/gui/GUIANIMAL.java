@@ -14,10 +14,8 @@ public class GUIANIMAL {
         String eda = sc.nextLine();
         System.out.println("Digite la raza");
         String raza = sc.nextLine();
-        System.out.println("Digite la color");
-        String color = sc.nextLine();
 
-        System.out.println(control.interfazHorse(nom, com, eda, raza,color));
+        System.out.println(control.interfazDog(nom, com, eda, raza));
 
     }
 

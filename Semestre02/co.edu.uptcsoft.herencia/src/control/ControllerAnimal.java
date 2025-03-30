@@ -7,6 +7,7 @@ public class ControllerAnimal {
     public String interfazDog(String nom, String com, String eda, String raz) {
         byte edad = Byte.parseByte(eda);
         Dog dog = new Dog(nom, com, edad, raz);
+        dog.mensaje();
         return String.valueOf(dog);
     }
 

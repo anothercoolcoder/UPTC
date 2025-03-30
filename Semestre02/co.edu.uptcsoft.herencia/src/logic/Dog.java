@@ -1,6 +1,6 @@
 package logic;
 
-public class Dog extends Mammal {
+public class Dog extends Mammal implements Accion{
     private String race;
 
     public Dog(String name, String food, byte age, String race) {
@@ -16,6 +16,7 @@ public class Dog extends Mammal {
         this.race = race;
     }
 
+
     @Override
     public String sonido() {
         return "";
@@ -30,5 +31,14 @@ public class Dog extends Mammal {
                 ", food = '" + food + '\'' +
                 ", gestation = " + gestation +
                 '}';
+    }
+
+    @Override
+    public void nadar() {
+
+    }
+    @Override
+    public String mensaje() {
+        return "Soy un animal, que le gusta la carne";
     }
 }
