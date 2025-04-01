@@ -1,8 +1,8 @@
 package Logic;
 
 public class Leccion {
-    public String titulo, contenido;
-    public int duracion;
+    private String titulo, contenido;
+    private int duracion;
 
     public Leccion(String titulo, String contenido, int duracion) {
         this.titulo = titulo;
