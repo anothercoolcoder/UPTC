@@ -49,7 +49,6 @@ public class GuiGestionClase {
         } while (opcion != 4);
     }
 
-    // Métodos para gestión de instructor
     private void gestionarInstructor() {
         System.out.println("\n--- GESTIÓN DE INSTRUCTOR ---");
         System.out.println("1. Iniciar Sesión");
@@ -88,7 +87,6 @@ public class GuiGestionClase {
         System.out.println("Correo no encontrado. Regístrese primero.");
     }
 
-    // Implementación del método menuInstructorCreador
     private void menuInstructorCreador(Instructor instructor) {
         int opcion;
         do {
@@ -121,7 +119,6 @@ public class GuiGestionClase {
         } while (opcion != 4);
     }
 
-    // Implementación del método menuInstructorDirector
     private void menuInstructorDirector(Instructor instructor) {
         int opcion;
         do {
@@ -158,7 +155,6 @@ public class GuiGestionClase {
         } while (opcion != 5);
     }
 
-    // Métodos de operaciones para instructores creadores
     private void crearCurso(Instructor instructor) {
         System.out.print("\nIngrese el nombre del curso: ");
         String nombre = sc.nextLine();
@@ -201,7 +197,6 @@ public class GuiGestionClase {
         System.out.println("\nNombre del curso actualizado exitosamente!");
     }
 
-    // Métodos de operaciones para instructores directores
     private void cambiarNombreLecciones(Instructor instructor) {
         List<Curso> cursos = ControlClase.getCursosPorInstructor(instructor);
         if (cursos.isEmpty()) {
@@ -268,7 +263,6 @@ public class GuiGestionClase {
         }
     }
 
-    // Métodos existentes para estudiantes (sin cambios)
     private void gestionarEstudiante() {
         System.out.println("\n--- GESTIÓN DE ESTUDIANTE ---");
         System.out.println("1. Iniciar Sesión");
