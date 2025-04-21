@@ -1,7 +1,7 @@
 package LOGIC;
 
 public class Circulo extends Figura {
-    private double radio;
+    public double radio;
 
     public Circulo(double radio){
         this.radio = radio;
@@ -9,11 +9,12 @@ public class Circulo extends Figura {
 
     @Override
     public double calcularArea() {
-        return Math.PI * radio * radio;
+        return 0;
     }
 
     @Override
     public double calcularPerimetro() {
         return 2 * Math.PI * radio;
     }
+
 }

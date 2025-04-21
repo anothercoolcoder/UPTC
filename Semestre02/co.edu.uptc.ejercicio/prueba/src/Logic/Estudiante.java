@@ -14,7 +14,7 @@ public class Estudiante extends Usuario implements CompletarCurso {
     public List<Curso> getCursosInscritos() { return cursosInscritos; }
 
     @Override
-    public String getTipoUsuario() { return "ESTUDIANTE"; }
+        public String getTipoUsuario() { return "ESTUDIANTE"; }
 
     public void inscribirseCurso(Curso curso) {
         cursosInscritos.add(curso);

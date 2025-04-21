@@ -11,7 +11,7 @@ public abstract class Usuario {
         this.id = id;
     }
 
-    public String getNombre() { return nombre; }
+        public String getNombre() { return nombre; }
     public String getEmail() { return email; }
     public String getId() { return id; }
     public abstract String getTipoUsuario();

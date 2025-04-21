@@ -2,6 +2,8 @@ package Gui;
 
 import Control.Conversion;
 import Logic.*;
+
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class GuiGestionClase {
@@ -137,7 +139,7 @@ public class GuiGestionClase {
     }
 
     private void inscribirseEnCurso(Estudiante estudiante) {
-        System.out.println("\n--- INSCRIPCIÓN EN CURSO ---");
+        System.out.println("\n--- INSCRIPCIÓN EN CURSO -- -");
         verCursosDisponibles();
         System.out.print("Nombre del curso: ");
         String nombreCurso = sc.nextLine();
@@ -279,7 +281,7 @@ public class GuiGestionClase {
         System.out.print("Descripción: ");
         String descripcion = sc.nextLine();
 
-        String resultado = conversor.crearCurso(nombre, descripcion, instructor.getId());
+        String resultado = conversor.crearNuevoCurso(nombre, descripcion, instructor.getId());
         System.out.println("\n" + resultado);
     }
 
@@ -306,8 +308,9 @@ public class GuiGestionClase {
         System.out.println("\n--- MODIFICAR DESCRIPCION DEL CURSO ---");
         System.out.println("Nombre del curso:");
         String nombre = sc.nextLine();
-
-        String resCambio = conversor.modificarDescripcionCurso(nombreCurso, instructor.getId(), nuevaDescripcion);
+        System.out.println("Nueva descripcion");
+        String nuevaDescripcion = sc.nextLine();
+        String resCambio = conversor.modificarDescripcionCurso(nombre, instructor.getId(), nuevaDescripcion);
         System.out.println("\"\\n\" "+ resCambio);
     }
 }

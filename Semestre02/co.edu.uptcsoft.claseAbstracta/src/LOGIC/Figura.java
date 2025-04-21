@@ -10,5 +10,4 @@ public abstract class Figura {
         System.out.println("Perimetro " + calcularPerimetro());
     }
 
-
 }

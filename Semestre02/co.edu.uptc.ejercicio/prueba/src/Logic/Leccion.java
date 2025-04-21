@@ -10,7 +10,6 @@ public class Leccion {
         this.contenido = contenido;
         this.duracion = duracion;
     }
-
     public String getTitulo() { return titulo; }
     public String getContenido() { return contenido; }
     public int getDuracion() { return duracion; }

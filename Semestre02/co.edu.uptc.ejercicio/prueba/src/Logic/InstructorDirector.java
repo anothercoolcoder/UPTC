@@ -28,12 +28,13 @@ public class InstructorDirector extends Instructor {
         return cursosGestionados;
     }
 
-    public void modificarDescripcionCurso(Curso curso, String nuevaDescripcion) {
-
-    if(cursosGestionados.contains(curso)) {
-        curso.setDescripcion(nuevaDescripcion);
-
+    public String modificarDescripcionCurso(Curso curso, String nuevaDescripcion) {
+        if(cursosGestionados.contains(curso)) {
+            curso.setDescripcion(nuevaDescripcion);
+            return "Descripción modificada exitosamente";
+        }
+        return "Error: No tienes permisos para modificar este curso";
     }
 }
-}
+
 
