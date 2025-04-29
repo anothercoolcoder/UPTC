@@ -30,11 +30,11 @@ public class Reserva {
 
     public int getDuracionDias() {
         return Period.between(fechaInicio, fechaFin).getDays();
-    }
+    } // ¿por que en fechas muy grandes no representa completo?
 
     @Override
     public String toString() {
         return nombreCliente + " - Desde: " + fechaInicio.format(formatter) +
-                " Hasta: " + fechaFin.format(formatter) + "( la duracion de su estancia en dias, es:)" + getDuracionDias();
+                " Hasta: " + fechaFin.format(formatter) + "( la duracion de su estancia en dias, es : " + getDuracionDias()+ ")" ;
     }
 }

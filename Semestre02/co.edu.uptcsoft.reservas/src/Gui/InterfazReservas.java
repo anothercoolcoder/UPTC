@@ -33,7 +33,6 @@ public class InterfazReservas {
             int opcion = scanner.nextInt();
             scanner.nextLine(); // Consumir el salto de línea
 
-
             switch (opcion) {
                 case 1:
                     agregarReserva();

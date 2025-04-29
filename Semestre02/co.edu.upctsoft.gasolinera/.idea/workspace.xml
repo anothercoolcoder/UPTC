@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b35601a-38d3-4862-87b2-2e36c805296f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/co.edu.uptcsoft.conversion.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/src/run/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../co.edu.uptcsoft.conversion/src/run/Vista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../co.edu.repaso.uptcsoft.gasolinera/src/Control/Controler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../co.edu.repaso.uptcsoft.gasolinera/src/Gui/Vista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../co.edu.repaso.uptcsoft.gasolinera/src/Logic/Vehiculo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../co.edu.repaso.uptcsoft.gasolinera/src/Test/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +19,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;anothercoolcoder&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/anothercoolcoder/UPTC.git&quot;,
+    &quot;accountId&quot;: &quot;a87cb1d3-749c-41ba-a787-23a5815198a8&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 7
 }</component>
@@ -36,7 +45,7 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/Desktop/UPTC/Semestre02/Gasolinera&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/IdeaProjects/UPTC/Semestre02/co.edu.upctsoft.gasolinera&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
