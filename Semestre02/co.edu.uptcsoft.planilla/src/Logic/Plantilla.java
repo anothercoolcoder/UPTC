@@ -8,7 +8,6 @@ public class Plantilla {
     public void agregarEstudiante(Estudiante e){
         estudiantes.add(e);
     }
-
     public String mostrarPlantilla(){
         StringBuilder sb = new StringBuilder("Listado de estudiantes\n");
         int index = 1; // en la primera iteracion es el valor original
@@ -39,7 +38,6 @@ public class Plantilla {
         }
         return null;
     }
-
     public boolean editarNombre(String actual, String nuevo){
         Estudiante e = buscar(actual);
         if (e != null){
@@ -50,7 +48,7 @@ public class Plantilla {
     }
     public boolean editarNota(String nombre, int indexNota, double nuevaNota){
         Estudiante e = buscar(nombre);
-        if(e != null && indexNota >= 0 && indexNota < 3){
+        if(e != null && indexNota >= 0 && indexNota <e.cantidadNotas()){
             e.setNota(indexNota, nuevaNota);
             return true;
         }
@@ -64,5 +62,12 @@ public class Plantilla {
             }
         }
         return false;
+    }
+    public int getCantidadNotas(String nombre){
+        Estudiante e = buscar(nombre);
+        if (e != null){
+            return e.cantidadNotas();
+        }
+        return 0;
     }
 }

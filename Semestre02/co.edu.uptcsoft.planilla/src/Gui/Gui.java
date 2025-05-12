@@ -1,6 +1,9 @@
 package Gui;
 import Control.Control;
+import Logic.Estudiante;
+
 import javax.swing.*;
+import java.util.ArrayList;
 
 public class Gui{
     Control control = new Control();
@@ -155,15 +158,22 @@ public class Gui{
                 options,
                 options[0]
         );
-        Object[] campos = {"Nombre", "Nota 1", "Nota 2", "Nota 3"};
+        Estudiante estudiante = control.buscarEstudiante(choice);
+        ArrayList<String> campos = new ArrayList<>();
+        campos.add("Nombre");
+        for(int i = 1; i <= estudiante.cantidadNotas();i++){
+            campos.add("Nota " + i);
+        }
+        String[] camposArray = campos.toArray(new String[0]);
+
         String campo = (String) JOptionPane.showInputDialog(
                 null,
                 "¿Que desea editar?",
                 "Editar campo",
                 JOptionPane.QUESTION_MESSAGE,
                 null,
-                campos,
-                campos[0]
+                camposArray,
+                camposArray[0]
         );
         switch (campo){
             case "Nombre":
@@ -173,14 +183,18 @@ public class Gui{
                         JOptionPane.showMessageDialog(null, "Nombre actualizado");
                     }
                 }
-            case "Nota 1":
-            case "Nota 2":
-            case "Nota 3":
-                int index = Integer.parseInt(campo.split(" ")[1])-1;
-                double nuevaNota = pedirNota("Nueva "+ campo);
-                if (control.editarNota(choice, index, nuevaNota)){
-                    JOptionPane.showMessageDialog(null, "Nota actualizada");
+                break;
+            default:
+                try{
+                    int index = Integer.parseInt(campo.split(" ")[1])-1;
+                    double nuevaNota = pedirNota("Nueva "+ campo);
+                    if (control.editarNota(choice, index, nuevaNota)){
+                        JOptionPane.showMessageDialog(null, "Nota actualizada");
+                    }
+                } catch (Exception e){
+                    JOptionPane.showMessageDialog(null, "Ocurrio un error al actualizar la nota");
                 }
+
                 break;
         }
 

@@ -10,11 +10,9 @@ public class Estudiante {
         this.nombre = nombre;
         this.notas = notas;
     }
-
     public String getNombre() {
         return nombre;
     }
-
     public double getDefinitiva(){
         double sum = 0;
         for (double nota : notas) {
@@ -22,25 +20,24 @@ public class Estudiante {
         }
         return sum/notas.length;
     }
-
     public String getNotas(){
         return Arrays.toString(notas);
     }
-
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
     public void setNota(int index, double nota){
         if(index >= 0 && index < notas.length){
             this.notas[index] = nota;
-            getDefinitiva();
         }
     }
-
+    public int cantidadNotas(){
+        return notas.length;
+    }
     @Override
     public String toString() {
-        return  getNombre() + ", " + '\'' +
+        return  nombre + ": " +
                 getNotas() +
-                ", definitiva = " + String.format("%.2f",getDefinitiva());
+                "| Nota definitiva: " + String.format("%.2f",getDefinitiva());
     }
 }
