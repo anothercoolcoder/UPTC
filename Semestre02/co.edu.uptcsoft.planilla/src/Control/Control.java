@@ -17,9 +17,6 @@ public class Control {
     public void ordenarDefinitiva() {
         plantilla.ordenarDefinitiva();
     }
-    public int getCantidadNotas(String nombre){
-        return plantilla.getCantidadNotas(nombre);
-    }
     public ArrayList<String> obtenerNombres() {
         return plantilla.getEstudiantes();
     }
