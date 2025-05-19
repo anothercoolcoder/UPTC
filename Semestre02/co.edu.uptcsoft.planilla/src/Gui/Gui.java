@@ -35,10 +35,10 @@ public class Gui{
             JOptionPane.showMessageDialog(null, "Se tomara el valor de 2");
             cantidad = 2;
         }
-        for (int i = 0; i<cantidad; i++){
+        for (int i = 0; i < cantidad; i++){
             double[] notas = new double[3];
             String nombre;
-            String regex = "^[a-zA-Z]{3,}";
+            String regex = "^[a-zA-Z]{3,10}";
             while(true){
                 nombre = JOptionPane.showInputDialog("Nombre del estudiante " + (i+1)).toUpperCase();
                 if (nombre.matches(regex)){
@@ -97,7 +97,8 @@ public class Gui{
     }
     public void ordenarOpciones(){
         Object[] options = {"Definitiva", "Nombre", "Cancelar"};
-        String choice = (String) JOptionPane.showInputDialog(
+        String choice = (String)
+                JOptionPane.showInputDialog(
                 null,
                 "¿Que quieres hacer?",
                 "Opciones",
@@ -106,6 +107,10 @@ public class Gui{
                 options,
                 options[0]
         );
+        if(choice == null || choice.equals("Cancelar")){
+            JOptionPane.showMessageDialog(null, "Cancelando");
+            return;
+        }
         switch (choice){
             case "Definitiva":
                 JOptionPane.showMessageDialog(null, "Ordenando por definitiva...");
@@ -117,7 +122,7 @@ public class Gui{
                 control.ordenarNombre();
                 JOptionPane.showMessageDialog(null, control.mostrarPlantilla());
                 break;
-            case "Cancelar":
+            default:
                 JOptionPane.showMessageDialog(null, "No se realizaron cambios");
                 JOptionPane.showMessageDialog(null, control.mostrarPlantilla());
                 break;

@@ -18,6 +18,7 @@ public class Estudiante {
         for (double nota : notas) {
             sum += nota;
         }
+
         return sum/notas.length;
     }
     public String getNotas(){

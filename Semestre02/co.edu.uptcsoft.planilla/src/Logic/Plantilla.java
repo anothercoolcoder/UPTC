@@ -17,8 +17,7 @@ public class Plantilla {
         return sb.toString();
     }
     public void ordenarDefinitiva(){
-        estudiantes.sort((a,b)-> Double.compare(b.getDefinitiva(),a.getDefinitiva()));
-
+        estudiantes.sort( (a,b)-> Double.compare(b.getDefinitiva(),a.getDefinitiva()));
     }
     public void ordenarNombre(){
         estudiantes.sort(Comparator.comparing(Estudiante::getNombre));
@@ -63,11 +62,5 @@ public class Plantilla {
         }
         return false;
     }
-    public int getCantidadNotas(String nombre){
-        Estudiante e = buscar(nombre);
-        if (e != null){
-            return e.cantidadNotas();
-        }
-        return 0;
-    }
+
 }
