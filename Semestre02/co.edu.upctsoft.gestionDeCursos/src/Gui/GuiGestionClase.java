@@ -398,7 +398,6 @@ public class GuiGestionClase {
         }
     }
 
-
     private void cambiarDuracionLecciones(Instructor instructor) {
         List<Curso> cursos = ControlClase.getCursosPorInstructor(instructor);
         if (cursos.isEmpty()) {
@@ -456,7 +455,6 @@ public class GuiGestionClase {
         lecciones.get(numLeccion - 1).setDuracion(nuevaDuracion);
         System.out.println("\nDuración de la lección actualizada exitosamente!");
     }
-
 
     private void agregarNuevaLeccion(Curso curso) {
         System.out.print("\nIngrese el título de la nueva lección: ");
